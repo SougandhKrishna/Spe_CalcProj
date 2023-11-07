@@ -11,58 +11,58 @@ public class AppTest {
     }
     @Test
     public void test_add_positive(){
-        int a = 1;
-        int b = 2;
-        int expectedResult = 3;
+        double a = 10;
+        double b = 20;
+        double expectedResult = 30;
         Assert.assertEquals(expectedResult, calculator.add(a, b), 0.01);
     }
     @Test
     public void test_add_negative(){
-        int a = 1;
-        int b = 2;
-        int expectedResult = 0;
+        double a = 1.5;
+        double b = 2.4;
+        double expectedResult = 2;
         Assert.assertNotEquals(expectedResult, calculator.add(a, b));
     }
     @Test
     public void test_sub_positive(){
-        int a = 2;
-        int b = 2;
-        int expectedResult = 0;
+        double a = 15;
+        double b = 15;
+        double expectedResult = 0;
         Assert.assertEquals(expectedResult, calculator.sub(a, b), 0.01);
     }
     @Test
     public void test_sub_negative(){
-        int a = 2;
-        int b = 2;
-        int expectedResult = -1;
+        double a = 20;
+        double b = 12.5;
+        double expectedResult = 3;
         Assert.assertNotEquals(expectedResult, calculator.sub(a, b));
     }
     @Test
     public void test_mul_positive(){
-        int a = 2;
-        int b = 2;
-        int expectedResult = 4;
+        double a = 4;
+        double b = 4;
+        double expectedResult = 16;
         Assert.assertEquals(expectedResult, calculator.mul(a, b), 0.01);
     }
     @Test
     public void test_mul_negative(){
-        int a = 2;
-        int b = 2;
-        int expectedResult = 8;
+        double a = 2.5;
+        double b = 3.5;
+        double expectedResult = 9;
         Assert.assertNotEquals(expectedResult, calculator.mul(a, b));
     }
     @Test
     public void test_div_positive(){
-        double a = 2;
+        double a = 4;
         double b = 2;
-        double expectedResult = 1;
+        double expectedResult = 2;
         Assert.assertEquals(expectedResult, calculator.div(a, b), 0.001);
     }
     @Test
     public void test_div_negative(){
-        int a = 2;
-        int b = 2;
-        int expectedResult = -1;
+        double a = 4;
+        double b = 2;
+        double expectedResult = 1;
         Assert.assertNotEquals(expectedResult, calculator.div(a, b));
     }
 }
