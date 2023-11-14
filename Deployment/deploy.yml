@@ -13,4 +13,4 @@
         name: docker
         state: started
     - name: Running container
-      shell: docker run -it -d --name spe_calc_con sougandh666/spe_calculator_project
+      shell: docker create -it --name spe_calc_con sougandh666/spe_calculator_project
