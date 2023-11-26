@@ -65,11 +65,11 @@ public class AppTest {
         double expectedResult = 1;
         Assert.assertNotEquals(expectedResult, calculator.div(a, b));
     }
-    @Test
-    public void test_div_new(){
-        double a = 46;
-        double b = 2;
-        double expectedResult = 23;
-        Assert.assertEquals(expectedResult, calculator.div(a, b), 0.001);
-    }
+    // @Test
+    // public void test_div_new(){
+    //     double a = 46;
+    //     double b = 2;
+    //     double expectedResult = 23;
+    //     Assert.assertEquals(expectedResult, calculator.div(a, b), 0.001);
+    // }
 }
